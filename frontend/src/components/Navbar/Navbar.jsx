@@ -28,11 +28,16 @@ const Navbar = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="hidden md:flex items-center mx-auto w-1/3">
+        <div className="hidden md:flex items-center ms-64 w-1/3 relative">
           <input
             type="text"
             placeholder="Search..."
-            className="w-full py-2 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300"
+            className="w-full py-2 pl-10 pr-4 rounded-3xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black transition-all duration-300"
+          />
+          <img
+            src="../src/assets/search.png" // Update this with your actual image path
+            alt="Search Icon"
+            className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5"
           />
         </div>
 

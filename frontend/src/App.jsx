@@ -8,12 +8,10 @@ export default function App() {
   return (
     <>
     <Navbar /> 
-    {/* <Home /> */}
-    {/* <Crops /> */}
-    {/* <Solutions /> */}
-    <ProfileCard /> 
-    
-
+    <Home />
+    <Crops />
+    <Solutions />
+    {/* <ProfileCard />  */}
     </>
   )
 }

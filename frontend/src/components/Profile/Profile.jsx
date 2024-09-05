@@ -23,12 +23,14 @@ const ProfileCard = () => {
                 alt="Avatar"
                 className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full border-4 border-white"
               />
+              
             </div>
 
             {/* Profile Details */}
             <div className="text-center lg:text-center px-6 py-4">
+          <h4 className='flex justify-center'>4.5/5<img src="../src/assets/star.png" className='h-10 w-10 -mt-2'></img></h4>
               <h2 className="text-xl font-semibold">Ram Prakash</h2>
-              <p className="text-sm text-gray-600">Uttar Pradesh</p>
+              <p className="text-sm text-gray-600">Phulera , Uttar Pradesh</p>
               <p className="text-sm text-gray-400">Rice, Millets, Turnips</p>
 
               {/* Follower/Uploads Info */}
@@ -55,11 +57,12 @@ const ProfileCard = () => {
             </div>
           </div>
         </div>
-
+        
         {/* Section Content (Right Side) */}
         <div className="w-full lg:w-2/3 p-4">
+        
           {/* Navigation Bar for Sections */}
-          <div className="flex justify-center lg:justify-start space-x-6 border-b border-gray-300">
+          <div className="flex justify-start space-x-6 border-b border-gray-300">
             {sections.map(section => (
               <button
                 key={section}
@@ -73,8 +76,9 @@ const ProfileCard = () => {
                 {section}
               </button>
             ))}
+            
           </div>
-
+          
           {/* Section Content */}
           <div className="mt-6">
             {activeSection === 'Gallery' && (
